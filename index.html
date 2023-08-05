@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elih - Clinica Online</title>
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header row container">
+        <a href="#" class="logo"><img src="./imgs/Elih.svg" alt=""></a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="navigation row">
+            <ul class="row">
+                <ul class="row">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#servico">Serviços</a></li>
+                    <li>
+                        <a href="#" class="page-btn active toggleContact" onclick="toggleContact();">Agende conosco</a>
+                        <div class="contactMenu row">
+                            <div class="contactMenu-content row flex container">
+                                <div>
+                                    <h4>Agende seu contato com</h4>
+                                    <h4>Elih</h4>
+                                    <form action="">
+                                        <div class="form row">
+                                            <div>
+                                                <label for="">Nome</label>
+                                                <input type="text" name="" id="" placeholder="Nome">
+                                            </div>
+                                            <div>
+                                                <label for="">Numero</label>
+                                                <input type="tel" name="" id="" placeholder="Telefone">
+                                            </div>
+                                            <div>
+                                                <label for="">data</label>
+                                                <input type="date" name="" id="">
+                                            </div>
+                                            <div>
+                                                <label for="">horário</label>
+                                                <select name="" id="">
+                                                    <option value="0">10:00</option>
+                                                    <option value="1">10:30</option>
+                                                    <option value="2">11:00</option>
+                                                    <option value="3">11:30</option>
+                                                    <option value="4">12:00</option>
+                                                </select>    
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="">Razão do contato</label>
+                                                <select name="" id="">
+                                                    <option value="0">Planos</option>
+                                                    <option value="1">Preços</option>
+                                                    <option value="2">Dúvidas</option>
+                                                    <option value="3">Integrações</option>
+                                                    <option value="4">Conhecer mais</option>
+                                                </select>    
+                                        </div>
+                                        <button type="submit" class="page-btn">Marcar um horário</button>
+                                    </form>
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero row flex container">
+        <div class="hero-content">
+            <h1>Otimizando consultas, maximizando resultados.</h1>
+            <p>Lorem ipsum dolor sit amet. Vel alias molestiae eum possimus facilis et molestiae nesciunt aut Quis perspiciatis ut accusantium esse? Qui doloribus eius est iusto soluta et accusamus aliquam eum animi galisum.</p>
+            <a href="#" class="page-btn">Venha nos conhecer!</a>
+        </div>
+        <div class="hero-img"><img src="imgs/pngwing.com.png" alt=""></div>
+    </section>
+</body>
+</html>
