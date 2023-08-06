@@ -13,8 +13,8 @@ html {
 body {
     --cl---1--:#ffffff;
     --cl---2--:#636262;
-    --cl---3--:linear-gradient(90.17deg, #4ac7b3, 0.15%, #5397b5 99.87%);
-    --cl---4--:#000000;
+    --cl---3--:linear-gradient(90.17deg, #4dd7c1, 45.15%, #3a758f 99.87%);
+    --cl---4--:#353434;
     --cl---5--:#f6f9fe;
     background: var(--cl---1--);
     margin: 0;
@@ -282,7 +282,7 @@ nav a:hover {
 
 .hero {
     flex-wrap: wrap-reverse;
-    margin: 2em 0;
+    margin: 2em ;
 }
 
 .hero h1 {
@@ -390,7 +390,7 @@ s-card:nth-of-type(even) .card-btn{
 }
 
 .slide-profile {
-    width: 100px;
+    width: 150px;
     height: 150px;
 }
 
@@ -400,7 +400,140 @@ s-card:nth-of-type(even) .card-btn{
     border-radius: 50%;
 }
 
+.swiper-slide .row{
+    padding-top: 1em;
+}
 
+.swiper-slide .row img {
+    width: 25px;
+}
+
+.swiper-slide p {
+    padding-bottom: 0;
+}
+
+.contact-body {
+    position: relative;
+    background: var(--cl---3--);
+    padding: 10em 0;
+    margin: 4em 0;
+    z-index: 2;
+}
+
+.contact-body::after, .contact-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-body::after {
+    left: 0;
+    background-image: url(./imgs/pngwing.com\ \(3\).png);
+    background-position: left center;
+    
+
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto
+}
+
+.contact-content h2 {
+    color: var(--cl---1--);
+}
+
+.contact-btns {
+    position: relative;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 1em 2.5em;
+    z-index: 2;
+    overflow: hidden;
+    margin-top: 2em;
+    border-radius: 20px;
+    
+}
+
+.contact-btns::after, .contact-btns::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-btns::after {
+    background: var(--cl---1--);
+    left: 0;
+}
+
+.contact-btns::before {
+    background: var(--cl---4--);
+    right: 0;
+}
+
+.contact-btns a {
+    font-weight: 500;
+    font-size: clamp(10px, 2vw, 22px);
+    color: var(--cl---4--);
+    text-transform: uppercase;
+}
+
+.contact-btns a:nth-last-of-type(1){
+    color: var(--cl---1--);
+}
+
+.contact-btns span{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    max-width: clamp(25px, 5vw, 55px);
+    max-height: clamp(25px, 5vw, 55px);
+    font-weight: 600;
+    font-size: clamp(10px, 2vw, 22px);
+    text-transform: uppercase;
+    color: var(--cl---1--);
+    background: var(--cl---3--);
+    padding: 0.5em;
+    border-radius: 50px;
+}
+
+
+footer{
+    background: var(--cl---5--);
+    padding: 4em 0;
+}
+
+.footer{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: em;
+}
+
+footer li{
+    color: var(--cl---2--);
+    font-size: 16px;
+}
+
+footer ul li+li{
+    padding-top: 0.5em;
+}
+
+.copy-right{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2em;
+}
 
 @media screen and (min-width:1205px) {
     .container {
@@ -410,6 +543,17 @@ s-card:nth-of-type(even) .card-btn{
     .hero-content {
         max-width: 550px;
     }
+
+    .about-content {
+        max-width: 420px;
+    }
+
+    .service-cards {
+        max-width: 900px;
+        margin-left: auto;
+    }
+
+
 }
 
 @media screen and (max-width:1000px) {
@@ -478,6 +622,7 @@ s-card:nth-of-type(even) .card-btn{
         background-position: top center;
         background-size: contain
     }
+    
 }
 
 
