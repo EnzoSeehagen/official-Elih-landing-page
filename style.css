@@ -24,7 +24,6 @@ body {
 img {
     max-width: 100%;
     width: 100%;
-    height: 30px;
 }
 
 h1, h2, h3, h4, h4, h6 {
@@ -47,7 +46,6 @@ h3 {
     line-height: 1.2;
     color: var(--cl---4--);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     padding-bottom: 1em;
 }
 
@@ -90,7 +88,7 @@ ul {
 .flex {
     align-items: center;
     flex-wrap: wrap;
-    gap: clmap(2em, 5vw, 5em)
+    gap: clamp(2em, 5vw, 5em)
 }
 
 .flex>* {
@@ -228,7 +226,7 @@ nav a:hover {
 
 .contactMenu-content h4 {
     font-weight: 700;
-    font-size: clmap(30px, 5vw, 46px);
+    font-size: clap(30px, 5vw, 46px);
     line-height: 1.2;
     color: #161616;
     text-transform: capitalize;
@@ -298,13 +296,109 @@ nav a:hover {
 .hero-img img {
     max-height: 600px;
     object-fit: contain;
-    width: 100%; /* Ajusta a largura para o container */
-    height: auto;
+    
 }
 
 
+.about, .service {
+    padding: 2em 0;
+}
+
+.about-img {
+    display: flex;
+    gap: 2em;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+
+    
+}
+
+.about-img>* {
+    flex: 1 1 5em;
+}
 
 
+.service-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+}
+
+.s-card{
+    padding: 2em
+}
+
+.s-card:nth-of-type(odd) {
+    background: var(--cl---5--);
+}
+
+.s-card img {
+    max-width: 65px;
+}
+
+.s-card h3 {
+    padding-top: 0.5em;
+}
+
+.card-btn {
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    background: var(--cl---1--);
+    fill: var(--cl---4--);
+    border-radius: 50px;
+}
+
+
+s-card:nth-of-type(even) .card-btn{
+    background: var(--cl---5--);
+}
+
+.card-btn:hover {
+    transform: scale(0.8);
+}
+
+.testimonial {
+    background: var(--cl---1--);
+    padding: 4em 0;
+    margin: 4em 0;
+}
+
+.testimonial h2 {
+    text-align: center;
+}
+
+.mySwiper{
+    position: relative;
+    padding-top: 2em;
+}
+
+.swiper-slide {
+    gap: 10px;
+    background: var(--cl---1--);
+    padding: 2em 1em;
+    border-radius: 10px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    transform: scale(0.5);
+}
+
+.slide-profile {
+    width: 100px;
+    height: 150px;
+}
+
+.slide-profile img {
+    border: 2.5px solid var(--cl---5--);
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 
